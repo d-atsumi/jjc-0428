@@ -5,7 +5,25 @@
   <title>Document</title>
 </head>
 <script>
-// ここに解答を記述
+/* 野呂さん、今回は完敗でした。totalのところが思いつかず（悔） */
+
+var basket = {
+'豚肉' : 380,
+'にんじん' : 90,
+'じゃがいも' : 120,
+'お米' : 2000
+}
+
+var total = 0;
+for (var i in basket){
+total += basket[i];
+}
+/*
+total *= 1.08;
+*/
+total = Math.ceil(total * 1.08);
+document.write (total + '円');
+
 </script>
 <body>
   
